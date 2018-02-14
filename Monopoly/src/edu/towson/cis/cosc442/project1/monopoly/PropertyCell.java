@@ -42,7 +42,7 @@ public class PropertyCell extends Cell {
 		return rentToCharge;
 	}
 
-	public Boolean playAction(String msg) {
+	public void playAction() {
 		Player currentPlayer = null;
 		if(!isAvailable()) {
 			currentPlayer = GameMaster.instance().getCurrentPlayer();

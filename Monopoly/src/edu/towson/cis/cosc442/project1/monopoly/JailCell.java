@@ -7,7 +7,7 @@ public class JailCell extends Cell {
 		setName("Jail");
 	}
 	
-	public Boolean playAction(String msg) {
+	public void playAction() {
 		
 	}
 }

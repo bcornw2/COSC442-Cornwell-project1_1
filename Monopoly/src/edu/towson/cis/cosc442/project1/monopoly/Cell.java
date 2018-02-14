@@ -29,7 +29,7 @@ public abstract class Cell implements IOwnable {
 		return available;
 	}
 	
-	public abstract Boolean playAction(String msg);
+	public abstract void playAction();
 
 	public void setAvailable(boolean available) {
 		this.available = available;
