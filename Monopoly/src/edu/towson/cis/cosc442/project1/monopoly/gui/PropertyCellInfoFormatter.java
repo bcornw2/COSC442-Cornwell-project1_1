@@ -1,10 +1,21 @@
+/*
+ * 
+ */
 package edu.towson.cis.cosc442.project1.monopoly.gui;
 
 import edu.towson.cis.cosc442.project1.monopoly.IOwnable;
 import edu.towson.cis.cosc442.project1.monopoly.Player;
 import edu.towson.cis.cosc442.project1.monopoly.PropertyCell;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class PropertyCellInfoFormatter.
+ */
 public class PropertyCellInfoFormatter implements CellInfoFormatter {
+    
+    /* (non-Javadoc)
+     * @see edu.towson.cis.cosc442.project1.monopoly.gui.CellInfoFormatter#format(edu.towson.cis.cosc442.project1.monopoly.IOwnable)
+     */
     public String format(IOwnable cell) {
         PropertyCell c = (PropertyCell)cell;
         StringBuffer buf = new StringBuffer();

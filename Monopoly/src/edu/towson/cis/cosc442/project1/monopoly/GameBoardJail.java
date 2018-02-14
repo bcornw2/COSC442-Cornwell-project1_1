@@ -1,6 +1,17 @@
+/*
+ * 
+ */
 package edu.towson.cis.cosc442.project1.monopoly;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class GameBoardJail.
+ */
 public class GameBoardJail extends GameBoard {
+	
+	/**
+	 * Instantiates a new game board jail.
+	 */
 	public GameBoardJail() {
 		super();
 		PropertyCell blue1 = new PropertyCell();
