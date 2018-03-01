@@ -1,18 +1,7 @@
-/*
- * 
- */
 package edu.towson.cis.cosc442.project1.monopoly;
 
 
-// TODO: Auto-generated Javadoc
-/**
- * The Class GameBoardCCGainMoney.
- */
 public class GameBoardCCGainMoney extends GameBoard {
-    
-    /**
-     * Instantiates a new game board CC gain money.
-     */
     public GameBoardCCGainMoney() {
 		super();
 		PropertyCell blue1 = new PropertyCell();

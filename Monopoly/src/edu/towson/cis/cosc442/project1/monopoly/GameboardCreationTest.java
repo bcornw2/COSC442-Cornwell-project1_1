@@ -1,6 +1,3 @@
-/*
- * 
- */
 package edu.towson.cis.cosc442.project1.monopoly;
 
 import java.awt.Dimension;
@@ -9,15 +6,8 @@ import java.util.List;
 import junit.framework.TestCase;
 import edu.towson.cis.cosc442.project1.monopoly.gui.GameBoardUtil;
 
-// TODO: Auto-generated Javadoc
-/**
- * The Class GameboardCreationTest.
- */
 public class GameboardCreationTest extends TestCase{
 	
-	/**
-	 * Test cell add order.
-	 */
 	public void testCellAddOrder() {
 		GameBoard board = new SimpleGameBoard();
 		List<?> northCells = GameBoardUtil.getNorthCells(board);
@@ -36,9 +26,6 @@ public class GameboardCreationTest extends TestCase{
 		assertEquals(0, eastCells.size());
 	}
 	
-	/**
-	 * Test cell add order 14.
-	 */
 	public void testCellAddOrder14() {
 		GameBoard board = new GameBoard14();
 		List<?> northCells = GameBoardUtil.getNorthCells(board);
@@ -65,9 +52,6 @@ public class GameboardCreationTest extends TestCase{
 		assertSame(board.queryCell("Yellow 2"), eastCells.get(1));
 	}
 	
-	/**
-	 * Test gameboard layout.
-	 */
 	public void testGameboardLayout() {
 		assertEquals(
 				new Dimension(1, 0), GameBoardUtil.calculateDimension(6));

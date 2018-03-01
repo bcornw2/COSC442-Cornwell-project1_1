@@ -1,18 +1,7 @@
-/*
- * 
- */
 package edu.towson.cis.cosc442.project1.monopoly;
 
 
-// TODO: Auto-generated Javadoc
-/**
- * The Class SimpleGameBoard.
- */
 public class SimpleGameBoard extends GameBoard {
-	
-	/**
-	 * Instantiates a new simple game board.
-	 */
 	public SimpleGameBoard() {
 		super();
 		PropertyCell blue1 = new PropertyCell();

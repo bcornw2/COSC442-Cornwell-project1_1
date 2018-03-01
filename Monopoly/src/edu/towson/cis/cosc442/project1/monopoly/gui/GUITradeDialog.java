@@ -1,6 +1,3 @@
-/*
- * 
- */
 package edu.towson.cis.cosc442.project1.monopoly.gui;
 
 import java.awt.*;
@@ -12,32 +9,17 @@ import javax.swing.*;
 
 import edu.towson.cis.cosc442.project1.monopoly.*;
 
-// TODO: Auto-generated Javadoc
-/**
- * The Class GUITradeDialog.
- */
 public class GUITradeDialog extends JDialog implements TradeDialog {
-    
-    /** The Constant serialVersionUID. */
+    /**
+	 * 
+	 */
 	private static final long serialVersionUID = 1L;
-	
-	/** The btn cancel. */
 	private JButton btnOK, btnCancel;
-    
-    /** The cbo properties. */
     private JComboBox<Object> cboSellers, cboProperties;
 
-    /** The deal. */
     private TradeDeal deal;
-    
-    /** The txt amount. */
     private JTextField txtAmount;
     
-    /**
-     * Instantiates a new GUI trade dialog.
-     *
-     * @param parent the parent
-     */
     public GUITradeDialog(Frame parent) {
         super(parent);
         
@@ -106,9 +88,6 @@ public class GUITradeDialog extends JDialog implements TradeDialog {
         this.pack();
     }
 
-    /**
-     * Builds the sellers combo.
-     */
     private void buildSellersCombo() {
         List<?> sellers = GameMaster.instance().getSellerList();
         for (Iterator<?> iter = sellers.iterator(); iter.hasNext();) {
@@ -120,18 +99,10 @@ public class GUITradeDialog extends JDialog implements TradeDialog {
         }
     }
 
-    /* (non-Javadoc)
-     * @see edu.towson.cis.cosc442.project1.monopoly.TradeDialog#getTradeDeal()
-     */
     public TradeDeal getTradeDeal() {
         return deal;
     }
 
-    /**
-     * Update properties combo.
-     *
-     * @param player the player
-     */
     private void updatePropertiesCombo(Player player) {
         cboProperties.removeAllItems();
         IOwnable[] cells = player.getAllProperties();
